@@ -3,6 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+a {
+    display: flex;
+    text-decoration: none;
+}
+a,.icon {
+    transition-timing-function: ease-out;
+    transition-duration: 300ms;
+}
+a:hover {
+    font-size: 20px;
+}
+a:hover > img {
+    height: 2.5rem;
+}
 h1 {
     color:#e8c9cd;
     font-weight: 600;
@@ -84,7 +105,7 @@ main {
     text-align: center;
     flex:2;
     color: white;
-    padding: 20px;
+    padding: 10px;
 }
 .icon {
     height: 2rem;
@@ -131,7 +152,7 @@ main {
     width:50%
 }
 .games {
-    margin: 30px;
+    margin: 20px;
     flex: 5;
     display: flex;
     flex-direction: column;
@@ -147,7 +168,7 @@ main {
     border-radius: 1.5rem;
     margin: 10px 0px;
     padding: 15px;
-    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.596);
+    box-shadow: 6px 6px 11px 10px rgba(0, 0, 0, 0.23);
     justify-content: space-between;
 }
 .card img {
@@ -171,6 +192,7 @@ main {
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
+    min-height: 10px;
 }
 .progress::after {
     content: "";
